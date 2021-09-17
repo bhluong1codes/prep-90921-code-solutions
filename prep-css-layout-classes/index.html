@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    img {
+      width: 100%;
+      max-height: 450px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Complete the HTML here -->
+<h1>
+  The Lord of the Rings Trilogy
+</h1>
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <img src="https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg" alt="Fellowship of the Ring">
+      <h3>The Lord of The Rings: The Fellowship of The Ring</h3>
+      <p>A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.</p>
+    </div>
+    <div class="column">
+      <img
+        src="https://m.media-amazon.com/images/M/MV5BZGMxZTdjZmYtMmE2Ni00ZTdkLWI5NTgtNjlmMjBiNzU2MmI5XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg"
+        alt="The Two Towers">
+        <h3>The Lord of The Rings: The Two Towers</h3>
+        <p>While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.</p>
+    </div>
+    <div class="column">
+      <img
+        src="https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg"
+        alt="The Two Towers">
+        <h3>The Lord of The Rings: The Return of The King</h3>
+        <p>Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
