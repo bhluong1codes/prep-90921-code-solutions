@@ -17,11 +17,9 @@
     console.log($container);
     var $header = document.createElement('h1');
     console.log($header);
-    var content = document.createTextNode('Hello World!');
-    $header.appendChild(content);
-    console.log($header);
+
+    $header.textContent = 'Hello World';
     $container.appendChild($header);
-    console.log($container);
   </script>
 </body>
 
